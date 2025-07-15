@@ -12,16 +12,16 @@ The project demonstrates:
 
 ## 🗂️ File Structure
 
-- 'GAN_params/' : Saved generator & discriminator parameters for GAN
-- 'WGAN_params/' : Saved generator & discriminator parameters for WGAN
-- 'plots/' : Plots of training losses and discriminator outputs
-- 'saved_loss/' : Generator and discriminator loss values (NumPy arrays)
-- 'GAN.py' : GAN training script
-- 'WGAN.py' : WGAN training script
-- 'nn_helper.py' : Generator, Discriminator, and loss function classes
-- 'plotting.ipynb' : Notebook for visualizing losses and generated outputs
-- 'evaluating_GAN_generator.ipynb' : Evaluates GAN using FID & SSIM scores
-- 'evaluating_WGAN_generator.ipynb' : Evaluates WGAN using FID & SSIM scores
+- GAN_params/ : Saved generator & discriminator parameters for GAN
+- WGAN_params/ : Saved generator & discriminator parameters for WGAN
+- plots/ : Plots of training losses and discriminator outputs
+- saved_loss/ : Generator and discriminator loss values (NumPy arrays)
+- GAN.py : GAN training script
+- WGAN.py : WGAN training script
+- nn_helper.py : Generator, Discriminator, and loss function classes
+- plotting.ipynb : Notebook for visualizing losses and generated outputs
+- evaluating_GAN_generator.ipynb : Evaluates GAN using FID & SSIM scores
+- evaluating_WGAN_generator.ipynb : Evaluates WGAN using FID & SSIM scores
 
 
 ## 📊 Evaluation Metrics
