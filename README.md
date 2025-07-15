@@ -1,25 +1,57 @@
-# GAN Final Project for CS152 
+# Generative Adversarial Networks (GAN) Final Project – CS152
 
-## Repository explanation 
-The code implement GAN and WGAN and tested them on the MNIST dataset. We also computed the FID and SSIM scores on the generated images. 
+This repository contains the final project for the Neural Networks course (CS152), where we implemented and evaluated **GAN** and **Wasserstein GAN (WGAN)** models on the MNIST dataset. We assessed the performance of the generated images using both **FID** (Fréchet Inception Distance) and **SSIM** (Structural Similarity Index) metrics.
 
-## File structure 
-`GAN_params` - GAN parameters (`dis-params-n` is the paramters for the discriminator after n epochs and `gen-params-n` is the paramters for the generator after n epochs).
+## 🔍 Project Overview
 
-`plots` - Saved plots of loss and discrimiantor output. 
+The project demonstrates:
+- Implementation of standard GAN and WGAN architectures from scratch in PyTorch
+- Evaluation of generative quality using both visual inspection and quantitative metrics
+- Comparison of training behavior across models using discriminator loss, generator loss, and output trends
+- Saving and reloading of model parameters for long-run training checkpoints
 
-`saved_loss` - Saved losses as NumPy arrays.
+## 🗂️ File Structure
 
-`WGAN_params` - GAN parameters (`dis-params-n` is the paramters for the discriminator after n epochs and `gen-params-n` is the paramters for the generator after n epochs).
+├── GAN_params/ # Saved generator & discriminator parameters for GAN
+├── WGAN_params/ # Saved generator & discriminator parameters for WGAN
+├── plots/ # Plots of training losses and discriminator outputs
+├── saved_loss/ # Generator and discriminator loss values (NumPy arrays)
+├── GAN.py # GAN training script
+├── WGAN.py # WGAN training script
+├── nn_helper.py # Generator, Discriminator, and loss function classes
+├── plotting.ipynb # Notebook for visualizing losses and generated outputs
+├── evaluating_GAN_generator.ipynb # Evaluates GAN using FID & SSIM
+├── evaluating_WGAN_generator.ipynb # Evaluates WGAN using FID & SSIM
 
-`evaluating_GAN_generator.ipynb` - Evaluate GAN using FID and SSIM scores. 
 
-`evaluating_WGAN_generator.ipynb` - Evaluate WGAN using FID and SSIM scores. 
+## 📊 Evaluation Metrics
 
-`GAN.py` - Python script to train GAN. 
+- **FID (Fréchet Inception Distance)**: Measures similarity between distributions of real and generated images using feature statistics from a pretrained Inception network.
+- **SSIM (Structural Similarity Index)**: Measures image similarity based on luminance, contrast, and structure.
 
-`nn_helper.py` - Helper file that store the classes for the generator and discriminator and loss functions. 
+Both metrics are used to quantify the visual quality and realism of generated samples.
 
-`plotting.ipynb` - Python notebook for plotting the losses, discriminator outputs, and generated images. 
+## 💻 Technologies Used
 
-`WGAN.py` - Python script to train WGAN. 
+- Python
+- PyTorch
+- NumPy
+- Matplotlib
+- Scikit-image
+
+## 👥 Collaborators
+
+This project was completed as a team project for CS152 (Neural Networks) at [Your College].
+
+- Nina Mizrahi
+- Kevin Phan
+- James Duffy
+
+Original group repository: [https://github.com/ph-kev/gan-nn-final-project](https://github.com/ph-kev/gan-nn-final-project)
+
+---
+
+## 📌 Notes
+
+- All model checkpoints and metrics are saved and can be used for future experiments or fine-tuning.
+- Plots provide insights into model convergence, discriminator behavior, and generator learning stability.
