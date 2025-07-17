@@ -1,6 +1,6 @@
 # Generative Adversarial Networks (GAN) Final Project – CS152
 
-This repository contains the final project for the Neural Networks course (CS152), where we implemented and evaluated **GAN** and **Wasserstein GAN (WGAN)** models on the MNIST dataset. We assessed the performance of the generated images using both **FID** (Fréchet Inception Distance) and **SSIM** (Structural Similarity Index) metrics.
+This repository contains the final project for the Neural Networks course (CS152), where we developed and evaluated **GAN** and **Wasserstein GAN (WGAN)** models on the MNIST dataset. We assessed the performance of the generated images using both **FID** (Fréchet Inception Distance) and **SSIM** (Structural Similarity Index) metrics.
 
 ## 🔍 Project Overview
 
