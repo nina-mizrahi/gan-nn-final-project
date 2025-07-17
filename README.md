@@ -50,7 +50,7 @@ Both metrics are used to quantify the visual quality and realism of generated sa
 
 ## 👥 Collaborators
 
-This project was completed as a team project for CS152 (Neural Networks) at [Your College].
+This project was completed as a team project for CS152 (Neural Networks) at Harvey Mudd College.
 
 - Nina Mizrahi
 - Kevin Phan
